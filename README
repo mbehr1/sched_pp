@@ -6,6 +6,16 @@ To build:
 ./configure
 make
 
+Usage:
+To change the policy and priority of process pid:
+sched_pp -p <pid> -s <priority> -P <policy=SCHED_RR|SCHED_FIFO|SCHED_OTHER>
+
+To just query the priority:
+sched_pp -g -p <pid>
+
+If <pid> is 0 or not given the sched_pp priority is queried/changed.
 
 
+
+Build details:
 After changing configure.ac rerun "autoreconf --force --install" (or aclocal and autoconf).
