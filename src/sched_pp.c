@@ -141,6 +141,7 @@ int main (int argc, char **argv)
 	int index;
 	int c;
 
+	printf("sched_pp (V1.0) (c) M.Behr, 2013\n");
 	opterr = 0;
 
 	while ((c = getopt (argc, argv, "gs:p:P:")) != -1)
@@ -182,6 +183,10 @@ int main (int argc, char **argv)
 
 	for (index = optind; index < argc; index++)
 		printf ("Non-option argument %s\n", argv[index]);
+
+	if (!do_get && !do_set){
+		printf("Usage:\nsched_pp -p <pid> [-g] [-s <priority>] [-P<policy=SCHED_FIFO|SCHED_RR|SCHED_OTHER>]\n");
+	}
 
 	if (do_get){
 		print_params(pid, 0);
