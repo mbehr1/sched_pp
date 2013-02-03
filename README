@@ -1,0 +1,7 @@
+sched_dd: small utility to interface with sched_set/getscheduler
+
+Main usage: change scheduler policy and priority for any pid/tid.
+
+To build:
+./configure
+
