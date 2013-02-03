@@ -1,3 +1,3 @@
-bin_PROGRAMS=a.out
-a_out_SOURCES=sched_pp.c
+bin_PROGRAMS=sched_pp
+sched_pp_SOURCES=sched_pp.c
 

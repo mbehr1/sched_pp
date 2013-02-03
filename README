@@ -4,4 +4,8 @@ Main usage: change scheduler policy and priority for any pid/tid.
 
 To build:
 ./configure
+make
 
+
+
+After changing configure.ac rerun "autoreconf --force --install" (or aclocal and autoconf).
