@@ -12,4 +12,6 @@
 .cproject
 .project
 .autotools
-.cache
+*.cache
+*.log
+
